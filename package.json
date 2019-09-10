@@ -4,6 +4,7 @@
   "main": "app.starter.js",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "esm": "^3.2.25",
     "express": "^4.17.1",
     "mongoose": "^5.7.0"
