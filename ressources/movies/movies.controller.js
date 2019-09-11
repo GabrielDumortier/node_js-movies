@@ -70,3 +70,24 @@ export const deleteMovie = async (req, res) => {
         res.status(400).end();
     }
 }
+
+export const search = async (req, res) => {
+    try {
+        console.log(req.query);
+        // const research = req.query.value;
+        // console.log(research);
+        // const allMovies = await Movies.find({"fields.title": {$in : [req.query] }});
+        // if(req.query) {
+
+        // }
+
+        // console.log(allMovies)
+
+
+        const searchMovie = await Movies.find(req.query);
+        console.log(searchMovie);
+    } catch(err) {
+        console.log(err);
+        res.status(400).end();
+    }
+}
